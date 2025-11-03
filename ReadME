@@ -1,0 +1,43 @@
+Trie: realiza la creación de un Trie, tiene 2 modos, uno que prioriza las palabras más recientes y otros que prefiere las más frecuentes
+
+Los archivos main / maintiempo / main memoria, sirven para crear tries y probar su desempeño.
+
+-main
+    Crea el trie y permite al usuario probar el autocompletado de palabras no en tiempo real,
+    Para esto ingresas tu prefijo en terminal y el prgrama imprime la palabra recomendada
+
+-mainmemoria
+    funciona igual que main pero da información sobre los nodos ocupados para crear el arbol como pide 4.1
+
+-maintiempo
+    el mismo funcionamiento pero dando estadisticas de tiempo (4.2), por alguna razon aqui no estaba funcionando la interfaz por lo que solo crea el trie
+
+-simulation 
+    Realiza una simulacion de como seria escribir las palabras de un texto ocupando el autocompletado del trie
+
+-compare_simulation
+    deberia comparar la metricas de distintos modos de los tries y textos pero por ahora no funciona totalmente bien
+
+
+para compilar
+
+make autocompletado
+make memoria
+make tiempo
+make simulation
+make compare
+
+para ejecutar
+
+make run-autocompletado
+make run-tiempo
+make run-memoria
+make run-simulation
+make run-compare
+
+Para cambiar el modo del trie entre y el archivo a leer se hace desde el makefile (hacer ctrl+s antes de ejecutar), el formato es:
+    run-simulation: $(SIMULATION)
+	    ./$(SIMULATION) $(TEXTOS)/(texto a autocompletar) (reciente/frecuente) (nombre archivo de salida)
+
+
+los resultado se deberian guardar en la carpeta resultados, si no aparecen crear la carpeta resultados manualmente porque a veces no funciona
