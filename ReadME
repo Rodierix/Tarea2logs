@@ -1,3 +1,13 @@
+    Para los tests correspondientes basta con escribir make completo
+
+
+    Se necesitan las siguientes librerias de python3: pandas, matplotlib, seaborn
+    Se pueden instalar con make install-python-deps
+
+    El archivo esta pensado para ser ejecutado en linux, de ejecutar en windows hay que cambiar el "python3" de la linea 70 del makefile por "python"
+
+
+
 Trie: realiza la creación de un Trie, tiene 2 modos, uno que prioriza las palabras más recientes y otros que prefiere las más frecuentes
 
 Los archivos main / maintiempo / main memoria, sirven para crear tries y probar su desempeño.
@@ -16,7 +26,10 @@ Los archivos main / maintiempo / main memoria, sirven para crear tries y probar 
     Realiza una simulacion de como seria escribir las palabras de un texto ocupando el autocompletado del trie
 
 -compare_simulation
-    deberia comparar la metricas de distintos modos de los tries y textos pero por ahora no funciona totalmente bien
+    Realiza comparaciones entre modos de trie y datasets
+
+-graficar.py
+    Grafica
 
 
 para compilar
@@ -34,6 +47,7 @@ make run-tiempo
 make run-memoria
 make run-simulation
 make run-compare
+
 
 Para cambiar el modo del trie entre y el archivo a leer se hace desde el makefile (hacer ctrl+s antes de ejecutar), el formato es:
     run-simulation: $(SIMULATION)

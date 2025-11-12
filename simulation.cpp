@@ -248,7 +248,7 @@ void run_simulation(Trie& trie, const std::vector<std::string>& words,
               << (total_simulation_time_ms * 1000 / total_chars_without_autocomplete) << " μs" << std::endl;
     
     // Export a csv
-    std::string output_filename = "resultdos/results_" + dataset_name + "_" + variant_name + ".csv";
+    std::string output_filename = "resultados/results_" + dataset_name + "_" + variant_name + ".csv";
     std::ofstream output_file(output_filename);
     if (output_file.is_open()) {
         output_file << "palabras,porcentaje_caracteres,tiempo_acumulado_ms\n";
