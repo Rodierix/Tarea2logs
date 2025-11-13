@@ -1,10 +1,19 @@
-    Para los tests correspondientes basta con escribir make completo
+    Para los tests correspondientes basta con escribir "make completo"
 
 
     Se necesitan las siguientes librerias de python3: pandas, matplotlib, seaborn
     Se pueden instalar con make install-python-deps
 
     El archivo esta pensado para ser ejecutado en linux, de ejecutar en windows hay que cambiar el "python3" de la linea 70 del makefile por "python"
+
+    Se necesita tener los 4 .txt en una carpeta llamada textos
+
+    textos
+    |-random_with_distribution
+    |-ranom.txt
+    |-wikipedia.txt
+    |-words.txt
+
 
 
 
